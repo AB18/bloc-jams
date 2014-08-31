@@ -1,1 +1,2 @@
-require('./landing')s
+require('./landing');
+require('./collection');

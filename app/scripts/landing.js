@@ -10,9 +10,10 @@
    };
  
    var offHoverAction = function(event) {
-     console.log('Off-hover action triggered.');
+     console.log('action triggered.');
      $(this).animate({'margin-top': '0px'});
    };
  
     $('.selling-points .point').hover(onHoverAction, offHoverAction);
   });
+ /*Comment*/
