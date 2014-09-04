@@ -146,10 +146,7 @@
     margin-right: 65px; }
   .player-bar .play-controls .play-pause {
     margin-right: 60px;
-    font-size: 30px;
-    transition: background-color 1s linear; }
-  .player-bar .play-controls .play-pause:hover {
-    background-color: rgba(255, 255, 255, 0.2); }
+    font-size: 30px; }
   .player-bar .currently-playing {
     width: 50%;
     text-align: center;
