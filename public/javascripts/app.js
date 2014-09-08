@@ -427,6 +427,10 @@ blocJams.controller('Landing.controller', ['$scope', function($scope) {
       var song = this.currentAlbum.songs[currentTrackIndex];
       this.setSong(this.currentAlbum, song);
      },
+     clickMe: function(){
+        
+        alert("Thanks for liking this song!");
+      },
      setSong: function(album, song) {
        if (currentSoundFile) {
             currentSoundFile.stop();
@@ -489,7 +493,15 @@ blocJams.controller('Landing.controller', ['$scope', function($scope) {
 
    };
  });
-
+blocJams.directive('clickme', function(){
+    console.log("test");
+    return {
+     templateUrl: '/templates/directives/clickMe.html', 
+     replace: true,
+     restrict: 'E'
+     // link: function(scope, element, attributes) {}
+    };
+});
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
